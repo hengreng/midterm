@@ -6,14 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reng</title>
     <style>
+        body{
+            background-color: white;
+            margin: 0%;
+            padding: 0%;
+            list-style: none;
+            font-family: 新細明體;
+        }
         .intro{
-            height: 300px;
-            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
             background-color: black;
         }
+        .intro-left{
+            float: left;
+            width:40%;
+        }
+        .intro-left img{
+            flex-shrink: 1;
+            position: relative;
+            float: right;
+            margin:50px;
+            width: 400px;
+            height: 533px;
+        }
+        .intro-right{
+            flex: 2;
+            float: right;
+            width:60%;
+            margin-top: 100px;
+            margin-right: 50px;
+        }
+        .txt{
+            color: azure;
+            font-size: 20px;
+        }
+        .txt img{
+            width: 50px;
+            height: 50px;
+        }
+
     </style>
 </head>
 <body>
-    <div class="intro"></div>
+    <div class="intro">
+        <div class="intro-left"><img src="image/me.jpg" alt="我的照片"></div>
+        <div class="intro-right">
+            <span class="txt">
+                <h2>陳姮仍</h2>
+                <p>就讀中原大學生物科技學系，輔修資訊管理學系。喜歡看Netflix以及散步；從國中開始學習二胡，目前正在準備七級檢定。</p>
+                <p>在高中時選修德語，產生興趣後學習了一陣子，分享一段話，</p>
+                <p style="font-style:italic">" Wir können den Tag nicht verlängern, aber wir können ihn verschönern. "</p>
+                <p>我們沒辦法延長一天的時間，但可以讓它變得更美好。希望看到這個網頁的人擁有快樂的一天。</p>
+                <br>
+                <a href="https://www.instagram.com/hengreng_?igsh=MXF5ZXJpd2NjNTlvaQ=="><img src="image/ig.png" alt="ig"></a>
+                <a href=""><img src="image/mail.png" alt="mail"></a>
+            </span>
+        </div>
+    </div>
 </body>
 </html>
