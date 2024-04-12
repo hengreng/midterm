@@ -5,163 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reng</title>
-    <style>
-        body{
-            background-color:#ffffff;
-            margin: 0%;
-            padding: 0%;
-            list-style: none;
-            font-family: 微軟正黑體;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        /*menu*/
-        #menu{
-            position: fixed;
-            top: 1px;
-            right: 10px;
-            left: 96%;
-            bottom: 80%;
-        }
-        .move{
-            position: relative;
-            float: right;
-            height: 50px;
-            width: 80px;
-            margin: 25px 5px 0 0;
-            text-decoration: none;
-            text-align: center;
-            color: #000103;
-            font-size: 35px;
-            font-weight: 900;
-        }
-        .move::after{
-            content: "";
-            position: absolute;
-            right: 50%;
-            left: 50%;
-            bottom: -5px;
-            border-bottom:4px solid #000103;
-            transition: .3s;
-        }
-        .move:hover::after{
-            right: 0%;
-            left: 0%;
-        }
-        /*intro*/
-        #intro{
-            display:flex;
-            flex-direction: row;
-            background-color: #ffffff;
-        }
-        .intro-left{
-            /*background-color: blue;*/
-            flex-shrink: 1;
-            float: left;
-            width:28%;
-            
-        }
-        .intro-left img{
-            display: block;
-            object-fit:cover;
-            object-position: 100% 100%;
-            max-width: 100%;
-        }
-        .intro-right{
-            /*background-color: aqua;*/
-            flex-shrink: 2;
-            float: right;
-            width:72%;
-        }
-        .txt{
-            float: left;
-            margin: 5%;
-            width: 80%;
-            color: #333138;
-            font-size: 35px;
-        }
-        .txt a{
-            text-decoration: none;
-            color: #333138;
-            margin-top: 0%; /*文字上移*/
-        }
-        /*skills*/
-        #skills{
-            display:flex;
-            flex-direction: row;
-            background-color: #e1e5f2;
-            color: #333138;
-            font-size: 35px;
-        }
-        .skills-left{
-            flex-shrink: 1;
-            float: left;
-            width:50%;
-            margin: 3%; 
-        }
-        .skills-right{
-            flex-shrink: 2;
-            float: right;
-            width:50%;
-            margin: 3%;
-        }
-        /*experience*/
-        #exper{
-            display:flex;
-            flex-direction: row;
-            background-color: #bfdbf7;
-            color: #ffffff;
-            font-size: 35px;
-            height: 1000px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="menu">
-        <ul style="list-style:none;">
-            <li><a class="move" href="#intro">介紹</a></li>
-            <li><a class="move" href="#skills">技能</a></li>
-            <li><a class="move" href="#exper">經歷</a></li>
-        </ul>
+    <header>
+        <h1>Welcome to reng's website.</h1>
+    </header>
+    <nav id="menu">  
+        <a href="#intro">介紹</a><br>
+        <a href="#skills">技能</a><br>
+        <a href="#exper">經歷</a>
     </nav>
-    <section id="intro">
-        <div class="intro-left"><img src="image/my.jpg" alt="我的照片"></div>
-        <div class="intro-right">
-            <span class="txt">
-                <h2>陳姮仍</h2>
-                <p>就讀中原大學生物科技學系，輔修資訊管理學系。喜歡看Netflix以及散步；從國中開始學習二胡，目前正在準備七級檢定。</p>
-                <p>在高中時選修德語，產生興趣後學習了一陣子，分享一段話，</p>
-                <p style="font-style:italic">" Wir können den Tag nicht verlängern, aber wir können ihn verschönern. "</p>
-                <p>我們沒辦法延長一天的時間，但可以讓它變得更美好。希望看到這個網頁的人擁有快樂的一天。</p>
-                <br>
-                <tr>
-                    <td>
-                        <a href="https://www.instagram.com/hengreng_?igsh=MXF5ZXJpd2NjNTlvaQ=="><img src="image/ig.png" alt="ig"> Instagram </a>
-                    </td>
-                    </td>
-                        <a href=""><img src="image/mail.png" alt="mail"> G-mail </a>
-                    </td>
-                </tr>
-            </span>
-        </div>
-    </section>
-    <section id="skills">
-        <div class="skills-left">
-            <h2 align="center">專業技能</h2>
-            <p>生物</p>
-            <p>德語</p>
-            <P>二胡</P>
-            <P>觀星</P>
-        </div>
-        <div class="skills-right">
-            <h2 align="center">程式技能</h2>
-            <p>Html</p>
-            <p>CSS</p>
-            <p>Java</p>
-            <p>Python</p>
-        </div>
-    </section>
-    <section id="exper">
-        經歷
-    </section>
+    <main>
+        <section id="intro">
+            <div class="intro-left"><img src="image/pic.jpg" alt="我的照片"></div>
+            <div class="intro-right">
+                <span class="txt">
+                    <h2>陳姮仍</h2>
+                    <br>
+                    <h4>
+                        中原大學&emsp;主修&emsp;<a href="https://bioscience.cycu.edu.tw/">生物科技學系</a><br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;輔修&emsp;<a href="https://im.cycu.edu.tw/">資訊管理學系</a>
+                    </h4>
+                    <br>
+                    <p>休閒時喜歡看Netflix以及散步；目前正在準備第七級的二胡檢定。<br>優點是在面對問題時，可以冷靜思考；缺點是在面對新環境時比較慢熟。<br>高中時選修德文課，藉此分享一句話 :</p>
+                    <p style="font-style: italic;">" Wir können den Tag nicht verlängern, aber wir können ihn verschönern. "</p>
+                    <p>我們沒辦法延長一天的時間，但可以讓它變得更美好。<br>希望造訪這個網頁的人能有幸福快樂的一天!</p>
+                    <br>
+                    <a href="https://www.instagram.com/hengreng_?igsh=MXF5ZXJpd2NjNTlvaQ=="><img src="image/ig.png" alt="ig"> Instagram </a>
+                    <a href=""><img src="image/mail.png" alt="mail"> G-mail </a>
+                </span>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="skills-left">
+                <h2 align="center">專業技能</h2>
+                <p>生物</p>
+                <p>德語</p>
+                <P>二胡</P>
+                <P>觀星</P>
+            </div>
+            <div class="skills-right">
+                <h2 align="center">程式技能</h2>
+                <p>Html</p>
+                <p>CSS</p>
+                <p>Java</p>
+                <p>Python</p>
+            </div>
+        </section>
+        <section id="exper">
+            <div>
+                <a href="#pro"><img src="image/project.jpg" alt="專題"></a>
+            </div>
+            <div>
+                <a href="#aca"><img src="image/aca.jpg" alt="生多所"></a>
+            </div>
+            <div>
+                <a href="#ocean"><img src="image/ocean.jpg" alt="海生館"></a>
+            </div>
+            <div>
+                <a href="#camp"><img src="image/camp.jpg" alt="創新營"></a>
+            </div>
+        </section>
+        <section class="content">
+            <div id="pro">
+                <div class="content_left">
+                    <h2>中原大學生物科技學系112年專題競賽</h2>
+                    <h3>2023.09&emsp;最佳創新獎</h3>
+                </div>
+                <div class="content_right">
+                    <video src="video/pro.mp4" width="560px" muted autoplay loop controls></video>
+                </div>
+            </div>
+            <div id="aca">
+                <div class="content_right">
+                    <h2>中央研究院&emsp;生物多樣性研究中心</h2>
+                    <h3>2023.07~2023.02</h3>
+                </div>
+                <div class="content_left">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4NUjzge_SiI?si=Bl7lg3ynujbkWPDW&amp;start=68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="ocean">
+                <div class="content_left">
+                    <h2>國立海洋生物博物館&emsp;企劃研究組</h2>
+                    <h3>2023.01~2023.02</h3>
+                </div>
+                <div class="content_right">
+                    <video src="video/ocean.mp4" width="300px" muted autoplay loop controls></video>
+                </div>
+            </div>
+            <div id="camp">
+                <div class="content_right">
+                    <h2>中原大學 創新及創業國際領袖營</h2>
+                    <h3>2022.07</h3>
+                </div>
+                <div class="content_left">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/16x5us0p8Lg?si=4pdsEETroSxmqzbp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>reng's copyright</p>
+    </footer>
 </body>
 </html>
