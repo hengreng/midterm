@@ -224,40 +224,29 @@ header {
     line-height: 1.5;
 }
 
+
 #pro {
     flex-shrink: 1;
     margin: 10px;
-    background-image: url(image/project_bg.jpg);
-    background-color: rgba(0, 0, 0, .6);
-    background-blend-mode: multiply;
+    background-color: #555555;
 }
 
 #aca {
     flex-shrink: 1;
     margin: 10px;
-    background-image: url(image/aca_bg.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-color: rgba(0, 0, 0, .6);
-    background-blend-mode: multiply;
+    background-color: #555555;
 }
 
 #ocean {
     flex-shrink: 1;
     margin: 10px;
-    background-image: url(image/ocean_bg.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-color: rgba(0, 0, 0, .6);
-    background-blend-mode: multiply;
+    background-color: #555555;
 }
 
 #camp {
     flex-shrink: 1;
     margin: 10px;
-    background-image: url(image/camp_bg.jpg);
-    background-color: rgba(0, 0, 0, .6);
-    background-blend-mode: multiply;
+    background-color: #555555;
 }
 
 /*footer*/
