@@ -154,6 +154,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     line-height: 2;
+    width: 50%;
 }
 
 #skills progress {
@@ -210,18 +211,18 @@ header {
 
 .content_left {
     float: left;
-    width: 48%;
+    width: 47%;
     padding: 0px;
-    margin: 20px 15px;
+    margin: 20px 20px;
     font-size: 20px;
     line-height: 1.5;
 }
 
 .content_right {
     float: right;
-    width: 48%;
+    width: 47%;
     padding: 0px;
-    margin: 20px 15px;
+    margin: 20px 20px;
     font-size: 20px;
     line-height: 1.5;
 }
